@@ -26,7 +26,7 @@ class CursosCTR extends CI_Controller {
 
 	public function editar(){
 		$identificador =  $this -> input -> post('id');
-		$data['listado'] = $this -> cursos_model -> getCursos($identificador);
+		$data['listado'] = $this -> cursos_model -> getCurso($identificador);
 		$this -> load -> view('editarcursos_view', $data);
 	}
 
